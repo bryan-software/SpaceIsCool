@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		3BA30E8D2C4B0DD3005AC9BF /* SpaceIsCoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30E8C2C4B0DD3005AC9BF /* SpaceIsCoolApp.swift */; };
-		3BA30E8F2C4B0DD3005AC9BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30E8E2C4B0DD3005AC9BF /* ContentView.swift */; };
 		3BA30E912C4B0DD4005AC9BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA30E902C4B0DD4005AC9BF /* Assets.xcassets */; };
 		3BA30E952C4B0DD4005AC9BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BA30E942C4B0DD4005AC9BF /* Preview Assets.xcassets */; };
-		3BA30E9F2C4B0DD4005AC9BF /* SpaceIsCoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30E9E2C4B0DD4005AC9BF /* SpaceIsCoolTests.swift */; };
 		3BA30EA92C4B0DD4005AC9BF /* SpaceIsCoolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EA82C4B0DD4005AC9BF /* SpaceIsCoolUITests.swift */; };
-		3BA30EAB2C4B0DD4005AC9BF /* SpaceIsCoolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EAA2C4B0DD4005AC9BF /* SpaceIsCoolUITestsLaunchTests.swift */; };
+		3BA30EB82C4B0DED005AC9BF /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EB72C4B0DED005AC9BF /* RequestProtocol.swift */; };
+		3BA30EBA2C4B0E12005AC9BF /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EB92C4B0E12005AC9BF /* RequestType.swift */; };
+		3BA30EBC2C4B0F08005AC9BF /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EBB2C4B0F08005AC9BF /* APIClientProtocol.swift */; };
+		3BA30EBE2C4B0F29005AC9BF /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EBD2C4B0F29005AC9BF /* APIClient.swift */; };
+		3BA30EC42C4B11C1005AC9BF /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EC32C4B11C1005AC9BF /* NetworkError.swift */; };
+		3BA30EC62C4B1415005AC9BF /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EC52C4B1415005AC9BF /* APIConstants.swift */; };
+		3BA30EC92C4D1DD8005AC9BF /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EC82C4D1DD8005AC9BF /* Apod.swift */; };
+		3BA30ECC2C4D1E34005AC9BF /* NASAService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30ECB2C4D1E34005AC9BF /* NASAService.swift */; };
+		3BA30ED12C4D2539005AC9BF /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30ED02C4D2539005AC9BF /* APODView.swift */; };
+		3BA30ED32C4D2556005AC9BF /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30ED22C4D2556005AC9BF /* APODViewModel.swift */; };
+		3BA30EF42C4D2F1F005AC9BF /* Neo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EF32C4D2F1F005AC9BF /* Neo.swift */; };
+		3BA30EF72C4D306F005AC9BF /* APODRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EF62C4D306F005AC9BF /* APODRequest.swift */; };
+		3BA30EF92C4D3080005AC9BF /* NEORequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EF82C4D3080005AC9BF /* NEORequest.swift */; };
+		3BA30EFB2C4D30CA005AC9BF /* NEOView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EFA2C4D30CA005AC9BF /* NEOView.swift */; };
+		3BA30EFD2C4D30D9005AC9BF /* NEOViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EFC2C4D30D9005AC9BF /* NEOViewModel.swift */; };
+		3BA30F002C4D4731005AC9BF /* View+OnFirstAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30EFF2C4D4731005AC9BF /* View+OnFirstAppear.swift */; };
+		3BA30F022C4D4C13005AC9BF /* Date+inYYYYMMDD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30F012C4D4C13005AC9BF /* Date+inYYYYMMDD.swift */; };
+		3BA30F052C4DB57F005AC9BF /* NASAServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30F042C4DB57F005AC9BF /* NASAServiceTests.swift */; };
+		3BA30FA52C4EF2FB005AC9BF /* APODViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30FA42C4EF2FB005AC9BF /* APODViewModelTests.swift */; };
+		3BA30FC32C4F941B005AC9BF /* NEODetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA30FC22C4F941B005AC9BF /* NEODetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,15 +53,33 @@
 /* Begin PBXFileReference section */
 		3BA30E892C4B0DD3005AC9BF /* SpaceIsCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceIsCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA30E8C2C4B0DD3005AC9BF /* SpaceIsCoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceIsCoolApp.swift; sourceTree = "<group>"; };
-		3BA30E8E2C4B0DD3005AC9BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3BA30E902C4B0DD4005AC9BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BA30E922C4B0DD4005AC9BF /* SpaceIsCool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpaceIsCool.entitlements; sourceTree = "<group>"; };
 		3BA30E942C4B0DD4005AC9BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BA30E9A2C4B0DD4005AC9BF /* SpaceIsCoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceIsCoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA30E9E2C4B0DD4005AC9BF /* SpaceIsCoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceIsCoolTests.swift; sourceTree = "<group>"; };
 		3BA30EA42C4B0DD4005AC9BF /* SpaceIsCoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceIsCoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA30EA82C4B0DD4005AC9BF /* SpaceIsCoolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceIsCoolUITests.swift; sourceTree = "<group>"; };
-		3BA30EAA2C4B0DD4005AC9BF /* SpaceIsCoolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceIsCoolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BA30EB72C4B0DED005AC9BF /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
+		3BA30EB92C4B0E12005AC9BF /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		3BA30EBB2C4B0F08005AC9BF /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		3BA30EBD2C4B0F29005AC9BF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		3BA30EC32C4B11C1005AC9BF /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		3BA30EC52C4B1415005AC9BF /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		3BA30EC82C4D1DD8005AC9BF /* Apod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		3BA30ECB2C4D1E34005AC9BF /* NASAService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAService.swift; sourceTree = "<group>"; };
+		3BA30ED02C4D2539005AC9BF /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
+		3BA30ED22C4D2556005AC9BF /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		3BA30EF32C4D2F1F005AC9BF /* Neo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Neo.swift; sourceTree = "<group>"; };
+		3BA30EF62C4D306F005AC9BF /* APODRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODRequest.swift; sourceTree = "<group>"; };
+		3BA30EF82C4D3080005AC9BF /* NEORequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEORequest.swift; sourceTree = "<group>"; };
+		3BA30EFA2C4D30CA005AC9BF /* NEOView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOView.swift; sourceTree = "<group>"; };
+		3BA30EFC2C4D30D9005AC9BF /* NEOViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEOViewModel.swift; sourceTree = "<group>"; };
+		3BA30EFF2C4D4731005AC9BF /* View+OnFirstAppear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+OnFirstAppear.swift"; sourceTree = "<group>"; };
+		3BA30F012C4D4C13005AC9BF /* Date+inYYYYMMDD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+inYYYYMMDD.swift"; sourceTree = "<group>"; };
+		3BA30F042C4DB57F005AC9BF /* NASAServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAServiceTests.swift; sourceTree = "<group>"; };
+		3BA30F292C4EBBD6005AC9BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3BA30FA42C4EF2FB005AC9BF /* APODViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModelTests.swift; sourceTree = "<group>"; };
+		3BA30FC22C4F941B005AC9BF /* NEODetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NEODetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +130,14 @@
 		3BA30E8B2C4B0DD3005AC9BF /* SpaceIsCool */ = {
 			isa = PBXGroup;
 			children = (
+				3BA30F292C4EBBD6005AC9BF /* Info.plist */,
+				3BA30EFE2C4D4717005AC9BF /* Utils */,
+				3BA30ECF2C4D2504005AC9BF /* Views */,
+				3BA30ECD2C4D24E9005AC9BF /* ViewModels */,
+				3BA30ECE2C4D24F6005AC9BF /* API */,
+				3BA30ECA2C4D1E1D005AC9BF /* Services */,
+				3BA30EC72C4D1DCF005AC9BF /* Models */,
 				3BA30E8C2C4B0DD3005AC9BF /* SpaceIsCoolApp.swift */,
-				3BA30E8E2C4B0DD3005AC9BF /* ContentView.swift */,
 				3BA30E902C4B0DD4005AC9BF /* Assets.xcassets */,
 				3BA30E922C4B0DD4005AC9BF /* SpaceIsCool.entitlements */,
 				3BA30E932C4B0DD4005AC9BF /* Preview Content */,
@@ -115,7 +156,8 @@
 		3BA30E9D2C4B0DD4005AC9BF /* SpaceIsCoolTests */ = {
 			isa = PBXGroup;
 			children = (
-				3BA30E9E2C4B0DD4005AC9BF /* SpaceIsCoolTests.swift */,
+				3BA30FA32C4EF2DE005AC9BF /* ViewModels */,
+				3BA30F032C4DB569005AC9BF /* Services */,
 			);
 			path = SpaceIsCoolTests;
 			sourceTree = "<group>";
@@ -124,9 +166,92 @@
 			isa = PBXGroup;
 			children = (
 				3BA30EA82C4B0DD4005AC9BF /* SpaceIsCoolUITests.swift */,
-				3BA30EAA2C4B0DD4005AC9BF /* SpaceIsCoolUITestsLaunchTests.swift */,
 			);
 			path = SpaceIsCoolUITests;
+			sourceTree = "<group>";
+		};
+		3BA30EC72C4D1DCF005AC9BF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30EC82C4D1DD8005AC9BF /* Apod.swift */,
+				3BA30EF32C4D2F1F005AC9BF /* Neo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3BA30ECA2C4D1E1D005AC9BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30ECB2C4D1E34005AC9BF /* NASAService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BA30ECD2C4D24E9005AC9BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30ED22C4D2556005AC9BF /* APODViewModel.swift */,
+				3BA30EFC2C4D30D9005AC9BF /* NEOViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3BA30ECE2C4D24F6005AC9BF /* API */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30EF52C4D3061005AC9BF /* Requests */,
+				3BA30EB72C4B0DED005AC9BF /* RequestProtocol.swift */,
+				3BA30EB92C4B0E12005AC9BF /* RequestType.swift */,
+				3BA30EBB2C4B0F08005AC9BF /* APIClientProtocol.swift */,
+				3BA30EBD2C4B0F29005AC9BF /* APIClient.swift */,
+				3BA30EC32C4B11C1005AC9BF /* NetworkError.swift */,
+				3BA30EC52C4B1415005AC9BF /* APIConstants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		3BA30ECF2C4D2504005AC9BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30ED02C4D2539005AC9BF /* APODView.swift */,
+				3BA30EFA2C4D30CA005AC9BF /* NEOView.swift */,
+				3BA30FC22C4F941B005AC9BF /* NEODetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BA30EF52C4D3061005AC9BF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30EF62C4D306F005AC9BF /* APODRequest.swift */,
+				3BA30EF82C4D3080005AC9BF /* NEORequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		3BA30EFE2C4D4717005AC9BF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30EFF2C4D4731005AC9BF /* View+OnFirstAppear.swift */,
+				3BA30F012C4D4C13005AC9BF /* Date+inYYYYMMDD.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		3BA30F032C4DB569005AC9BF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30F042C4DB57F005AC9BF /* NASAServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3BA30FA32C4EF2DE005AC9BF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BA30FA42C4EF2FB005AC9BF /* APODViewModelTests.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +384,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA30E8F2C4B0DD3005AC9BF /* ContentView.swift in Sources */,
+				3BA30ECC2C4D1E34005AC9BF /* NASAService.swift in Sources */,
+				3BA30EB82C4B0DED005AC9BF /* RequestProtocol.swift in Sources */,
+				3BA30EF92C4D3080005AC9BF /* NEORequest.swift in Sources */,
+				3BA30ED32C4D2556005AC9BF /* APODViewModel.swift in Sources */,
+				3BA30EFD2C4D30D9005AC9BF /* NEOViewModel.swift in Sources */,
+				3BA30EF72C4D306F005AC9BF /* APODRequest.swift in Sources */,
+				3BA30EFB2C4D30CA005AC9BF /* NEOView.swift in Sources */,
+				3BA30FC32C4F941B005AC9BF /* NEODetailView.swift in Sources */,
+				3BA30EBC2C4B0F08005AC9BF /* APIClientProtocol.swift in Sources */,
 				3BA30E8D2C4B0DD3005AC9BF /* SpaceIsCoolApp.swift in Sources */,
+				3BA30EBA2C4B0E12005AC9BF /* RequestType.swift in Sources */,
+				3BA30F022C4D4C13005AC9BF /* Date+inYYYYMMDD.swift in Sources */,
+				3BA30EC62C4B1415005AC9BF /* APIConstants.swift in Sources */,
+				3BA30ED12C4D2539005AC9BF /* APODView.swift in Sources */,
+				3BA30EC92C4D1DD8005AC9BF /* Apod.swift in Sources */,
+				3BA30EF42C4D2F1F005AC9BF /* Neo.swift in Sources */,
+				3BA30EC42C4B11C1005AC9BF /* NetworkError.swift in Sources */,
+				3BA30EBE2C4B0F29005AC9BF /* APIClient.swift in Sources */,
+				3BA30F002C4D4731005AC9BF /* View+OnFirstAppear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +410,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA30E9F2C4B0DD4005AC9BF /* SpaceIsCoolTests.swift in Sources */,
+				3BA30FA52C4EF2FB005AC9BF /* APODViewModelTests.swift in Sources */,
+				3BA30F052C4DB57F005AC9BF /* NASAServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA30EAB2C4B0DD4005AC9BF /* SpaceIsCoolUITestsLaunchTests.swift in Sources */,
 				3BA30EA92C4B0DD4005AC9BF /* SpaceIsCoolUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +564,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceIsCool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceIsCool/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -430,8 +573,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -458,6 +601,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"SpaceIsCool/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpaceIsCool/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -466,8 +610,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";

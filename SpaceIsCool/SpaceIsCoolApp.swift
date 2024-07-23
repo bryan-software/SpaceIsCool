@@ -11,7 +11,17 @@ import SwiftUI
 struct SpaceIsCoolApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                APODView<APODViewModel>(viewModel: APODViewModel())
+                    .tabItem {
+                        Label("APOD", systemImage: "camera.fill")
+                    }
+                
+                NEOView<NEOViewModel>(viewModel: NEOViewModel())
+                    .tabItem {
+                        Label("NEO", systemImage: "asterisk.circle.fill")
+                    }
+            }
         }
     }
 }
