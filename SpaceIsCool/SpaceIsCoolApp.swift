@@ -16,11 +16,13 @@ struct SpaceIsCoolApp: App {
                     .tabItem {
                         Label("APOD", systemImage: "camera.fill")
                     }
+                    .accessibilityLabel("Astronomy Picture of the Day")
                 
                 NEOView<NEOViewModel>(viewModel: NEOViewModel())
                     .tabItem {
                         Label("NEO", systemImage: "asterisk.circle.fill")
                     }
+                    .accessibilityLabel("Near Earth Objects")
             }
         }
     }

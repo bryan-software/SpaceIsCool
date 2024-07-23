@@ -49,6 +49,7 @@ struct NEOView<ViewModel: NEOViewModelable>: View {
                 } label: {
                     HStack {
                         Text("Name: \(item.name)")
+                            .accessibilityIdentifier(item.name)
                         if item.isPotentiallyHazardousAsteroid {
                             Spacer()
                             Text("Hazardous")
